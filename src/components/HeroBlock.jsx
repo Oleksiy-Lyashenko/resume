@@ -50,6 +50,7 @@ const HeroBlock = () => {
             <path className="scroll-circle" d="M33.5 74.5487C42.5594 77.9804 49 86.7381 49 97C49 110.255 38.2548 121 25 121C11.7452 121 1 110.255 1 97C1 86.7381 7.44057 77.9804 16.5 74.5487" stroke="white"/>
           </svg>
         </div>
+        <div id="intro"></div>
       </div>
     </div>
   );

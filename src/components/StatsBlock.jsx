@@ -13,7 +13,7 @@ export const StatsBlock = () => {
       {stats.map((stat, index) => (
         <div key={index} className="stat-item">
           <h1 className="stat-value">{stat.value}</h1>
-          <p className="stat-label">{stat.label}</p>
+          <p id="projects" className="stat-label">{stat.label}</p>
         </div>
       ))}
     </div>
