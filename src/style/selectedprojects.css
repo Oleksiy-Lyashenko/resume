@@ -1,0 +1,67 @@
+@import './fonts.css';
+
+
+.selected-projects-container {
+    /* margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 1rem;
+    background-color: #ffffff; */
+    padding: 0;
+  }
+
+  .selected-head-container {
+    margin-top: 100px;
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 4rem 1rem; */
+    background-color: #ffffff;
+  }
+  
+  .selected-title {
+    z-index: 1;
+    margin: 0;
+    margin-bottom: 28px;
+    position: relative;
+    color: #202020;
+    text-align: center;
+    font-family: Faro;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px; /* 87.5% */
+  }
+  
+  .gradient-asterisk {
+    position: absolute;
+    z-index: -1;
+    top: -40px;
+    right: -60px;
+    font-size: 2.5rem;
+    background: linear-gradient(to bottom right, #ff00ff, #8a2be2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: rotate(-45deg);
+  }
+  
+  .selected-subtitle {
+    margin: 0;
+    max-width: 800px;
+    color: #7C7979;
+    text-align: center;
+    
+    /* passage 1 */
+    font-family: "Helvetica Neue";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px; /* 135% */
+    letter-spacing: 1px;
+}
+  

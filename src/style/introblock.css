@@ -1,0 +1,137 @@
+@import './fonts.css';
+
+
+/* IntroBlock.css */
+.intro-container {
+    margin-top: 22px;
+    display: flex;
+    /* height: 100vh; */
+    font-family: "Arial", sans-serif;
+    color: #333;
+    /* padding: 2rem; */
+    box-sizing: border-box;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.70);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* Left Section */
+  .intro-left {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    position: absolute;
+    display: flex;
+    column-gap: 12px;
+    top: 40px;
+    left: 34px;
+    font-size: 1.5rem;
+    color: #ff44d4;
+    font-weight: bold;
+    /* margin-top: 1rem; */
+  }
+  
+  .logo-icon {
+    color: #F254CB;
+    font-family: Faro;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  
+  .intro-image {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+  
+  /* .scroll-indicator {
+    text-align: center;
+    margin-top: 1rem;
+  } */
+  
+  .intro-scroll-indicator {
+    position: absolute;
+    text-align: left;
+    bottom: 20px;
+    left: 34px;
+    font-size: 0.8rem;
+    color: #888;
+    margin-bottom: 0.5rem;
+    animation: gradientChange 2s infinite;
+    cursor: pointer;
+  }
+
+  @keyframes colorChange {
+    0% {
+      /* fill: #7EAAED; */
+      stroke: #7EAAED;
+    }
+    50% {
+      /* fill: #F254CB; */
+      stroke: #F254CB;
+    }
+    100% {
+      /* fill: #7EAAED; */
+      stroke: #7EAAED;
+    }
+  }
+
+  .intro-scroll-indicator svg path {
+    animation: colorChange 2s infinite;
+  }
+  
+  /* Right Section */
+  .intro-right {
+    flex: 1;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  .intro-title {
+    margin: 0;
+    margin-bottom: 40px;
+    font-family: Faro;
+    text-align: left;
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80px; /* 88.889% */
+
+    background: linear-gradient(221deg, #7EAAED 23.38%, #F254CB 81.31%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .intro-description-container {
+    width: 570px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  
+  .intro-description {
+    margin: 0;
+    text-align: left;
+    color: #000;
+
+    /* passage 1 */
+    font-family: "Helvetica Neue";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px; /* 135% */
+    letter-spacing: 1px;
+  }
+  
