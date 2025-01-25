@@ -34,12 +34,8 @@ export const IntroBlock = () => {
         <h1 className="intro-title">Hello <br />there!</h1>
         <div className="intro-description-container">
           <p className="intro-description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula nisi in cursus tincidunt. Aenean eu enim tellus. In non fringilla diam, id semper mauris. Sed ac nibh est.Nullam sagittis sagittis efficitur. Integer sit amet vehicula arcu. Nunc varius elementum nisi, ac volutpat risus pretium eu. Vestibulum eget consequat lectus. Vivamus nec ligula iaculis, ultrices urna ut, dapibus ante.  Aenean eu enim tellus. In non fringilla diam, id semper mauris. cu. Nunc varius elementum nisi, ac volutpat risus pretium eu. Vestibulum eget consequat lectus. Vivamus nec ligula iaculis, ultrices urna ut, dapibus ante. 
-          </p>
-          <p className="intro-description">
-            Nunc varius elementum nisi, ac volutpat risus pretium eu. Vestibulum
-            eget consequat lectus. Vivamus nec ligula iaculis, ultrices urna ut,
-            dapibus ante.
+          Hi, I’m Iryna – a creative force originally from Ukraine, now thriving in Newfoundland since 2016. Known for my creative, collaborative approach and a sharp eye for detail, I thrive on delivering high-quality results that exceed expectations. My adaptability to evolving project needs, combined with expertise in visual communication and layout design, allows me to tackle challenges with a fresh perspective. 
+          As a self-taught designer, I excel at thinking outside the box and leveraging resources to find the most effective solutions...Oh, and I’m that person who loves a good chat and makes teamwork feel like a breeze!
           </p>
         </div>
       </div>
