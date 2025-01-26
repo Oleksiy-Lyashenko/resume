@@ -1,14 +1,37 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../style/selectedprojects.css";
 import Cards from "./Card";
 
 export const SelectedProjects = () => {
+  const [rotation, setRotation] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Adjust the rotation speed as desired (e.g., dividing scrollY by a factor)
+      setRotation(window.scrollY / 5);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+
   return (
     <div className="selected-projects-container" id="projects">
       <div className="selected-head-container">
           <h1 className="selected-title">
           <div className="gradient-asterisk">
-              <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+              <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                  width="80" 
+                  height="80" 
+                  viewBox="0 0 80 80" 
+                  fill="none"
+                  style={{
+                    transform: `rotate(${rotation}deg)`,
+                    transition: "transform 0.1s ease-out", // Optional smooth rotation
+                  }}
+                >
                   <path d="M32.9927 80L34.1606 49.4444L7.0073 65.8333L0 54.1667L28.6131 40L0 25.8333L7.0073 14.1667L34.1606 30.5556L32.9927 0H47.0073L45.8394 30.5556L72.9927 14.1667L80 25.8333L51.3869 40L80 54.1667L72.9927 65.8333L45.8394 49.4444L47.0073 80H32.9927Z" fill="url(#paint0_linear_19_56)"/>
                   <defs>
                       <linearGradient id="paint0_linear_19_56" x1="40" y1="0" x2="40" y2="80" gradientUnits="userSpaceOnUse">

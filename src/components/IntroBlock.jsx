@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../style/introblock.css";
 import introPhoto from '../img/intro_photo.png';
 
 export const IntroBlock = () => {
+  const [rotation, setRotation] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Adjust the rotation speed as desired (e.g., dividing scrollY by a factor)
+      setRotation(window.scrollY / 5);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const scrollToProjects = () => {
     document.getElementById('projects').scrollIntoView({ 
       behavior: 'smooth',
@@ -14,9 +26,19 @@ export const IntroBlock = () => {
     <div className="intro-container" id="intro">
       <div className="intro-left">
         <div className="logo">
-          <span className="logo-icon"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
-  <path d="M10.7226 26.0001L11.1022 16.0695L2.27737 21.3959L0 17.6042L9.29927 13.0001L0 8.39589L2.27737 4.60423L11.1022 9.93062L10.7226 6.10352e-05H15.2774L14.8978 9.93062L23.7226 4.60423L26 8.39589L16.7007 13.0001L26 17.6042L23.7226 21.3959L14.8978 16.0695L15.2774 26.0001H10.7226Z" fill="#F254CB"/>
-</svg></span> meet iryna
+          <span className="logo-icon">
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              width="26" height="26" 
+              viewBox="0 0 26 26" 
+              fill="none" 
+              style={{
+                transform: `rotate(${rotation}deg)`,
+                transition: "transform 0.1s ease-out", // Optional smooth rotation
+              }}
+            >
+            <path d="M10.7226 26.0001L11.1022 16.0695L2.27737 21.3959L0 17.6042L9.29927 13.0001L0 8.39589L2.27737 4.60423L11.1022 9.93062L10.7226 6.10352e-05H15.2774L14.8978 9.93062L23.7226 4.60423L26 8.39589L16.7007 13.0001L26 17.6042L23.7226 21.3959L14.8978 16.0695L15.2774 26.0001H10.7226Z" fill="#F254CB"/>
+          </svg></span> meet iryna
         </div>
         <img
           src={introPhoto}
