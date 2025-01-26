@@ -4,7 +4,7 @@ import Cards from "./Card";
 
 export const SelectedProjects = () => {
   return (
-    <div className="selected-projects-container">
+    <div className="selected-projects-container" id="projects">
       <div className="selected-head-container">
           <h1 className="selected-title">
           <div className="gradient-asterisk">

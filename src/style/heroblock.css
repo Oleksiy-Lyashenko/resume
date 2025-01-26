@@ -60,8 +60,16 @@
     font-weight: 400;
     line-height: normal;
     text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 25px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
   }
-
+  
+  .nav-link:hover {
+    border: 1px solid white;
+  }
+  
   .nav-link-right {
     color: #FFF;
     font-size: 15px;
@@ -69,6 +77,26 @@
     font-weight: 700;
     line-height: normal;
     text-decoration: none;
+    padding: 5px 30px;
+    border-radius: 25px;
+    border: 0.75px solid white;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-link-right:hover {
+    background: transparent;
+    border-color: #7EAAED;
+  }
+  
+  /* Target state for when the link matches current section */
+  .nav-link:target {
+    border: 1px solid white;
+  }
+  
+  .nav-link-right:target {
+    color: #7EAAED;
+    background: white;
+    border-color: #7EAAED;
   }
   
   .button {
@@ -165,5 +193,16 @@
   
 html {
   scroll-behavior: smooth;
+}
+  
+.nav-link.active {
+    border: 1px solid white;
+    box-shadow: 0px 0px 4px 0px #FFF;
+}
+
+.nav-link-right.active {
+  color: #7EAAED;
+  background: white;
+  border-color: #7EAAED;
 }
   

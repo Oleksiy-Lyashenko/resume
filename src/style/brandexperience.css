@@ -13,10 +13,12 @@
 
   .brand-image-container {
     z-index: 1;
+    width: 360px;
     position: absolute;
-    top: -370px;
-    right: 0;
+    top: -150px;
+    right: -80px;
     /* width: 320px; */
+    perspective: 1000px;
   }
   
   .brand-header {
@@ -105,5 +107,10 @@
     width: 100%;
     height: auto;
     border-radius: 12px;
+  }
+  
+  .card-image {
+    transition: transform 0.1s linear;
+    will-change: transform;
   }
   

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../style/brandexperience.css";
 import img_1 from '../img/brand_img_1.png';
 import img_2 from '../img/brand_img_2.png';
@@ -7,6 +7,20 @@ import star_img from '../img/brand_star.png';
 
 
 const BrandExperience = () => {
+  const [rotation, setRotation] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Calculate rotation based on scroll position
+      const scrollPosition = window.scrollY;
+      const newRotation = (scrollPosition * 0.2) % 360; // Adjust 0.2 to control rotation speed
+      setRotation(newRotation);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   const brands = [
     { id: 1, image: img_1, title: "Sightline", class: "brand-card"}, // Replace with actual image paths
     { id: 2, image: img_2, title: "Access Dental", class: "brand-card brand-card-middle"},
@@ -20,6 +34,7 @@ const BrandExperience = () => {
                 src={star_img} 
                 alt="Decorative star" 
                 className="card-image" 
+                style={{ transform: `rotate(${rotation}deg)` }}
             />
         </div>
       <div className="brand-header">

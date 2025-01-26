@@ -40,14 +40,46 @@
   
   .card-image-container {
     position: relative;
-    /* overflow: hidden; */
+    cursor: pointer;
+  }
+  
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background: linear-gradient(332deg, rgba(8, 14, 34, 0.80) 3.51%, rgba(126, 170, 237, 0.32) 126.26%);
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .card-image-container:hover .image-overlay {
+    opacity: 1;
+  }
+  
+  /* .overlay-button {
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+  } */
+  
+  .card-image-container:hover .overlay-button {
+    transform: translateY(0);
   }
   
   .card-image {
     width: 100%;
-    /* height: 750px; */
-    /* height: 280px; */
     object-fit: contain;
+    transition: filter 0.3s ease;
+  }
+  
+  .card-image-container:hover .card-image {
+    filter: brightness(0.7);
   }
   
   .award {
@@ -111,10 +143,10 @@
     cursor: pointer;
     transition: background 0.3s ease, color 0.3s ease;
   }
-  
-  .btn.primary {
-    padding: 10px 30px;
-    color: #000;
+
+  .btn.img {
+    padding: 10px 40px;
+    color: white;
     font-family: Helvetica;
     font-size: 15px;
     font-style: normal;
@@ -122,7 +154,22 @@
     line-height: normal;
 
     border-radius: 25px;
-    border: 0.75px solid #000;
+    border: 0.75px solid white;
+    background: rgba(126, 170, 237, 0.80);
+  }
+  
+  .btn.primary {
+    padding: 10px 40px;
+    color: black;
+    font-family: Helvetica;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+
+    border-radius: 25px;
+    border: 0.75px solid black;
     background: rgba(255, 255, 255, 0.00);
   }
   
@@ -134,6 +181,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    text-decoration: none;
 
     border-radius: 25px;
     background: linear-gradient(90deg, #F254CB 0%, #7EAAED 100%);
