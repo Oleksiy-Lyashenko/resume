@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.04481ce4.css",
+    "main.js": "/static/js/main.a9460699.js",
+    "static/media/brand_star.png": "/static/media/brand_star.78f1b4285ece7f612754.png",
+    "static/media/sp-img-1.png": "/static/media/sp-img-1.13c15f61f17395b5a57f.png",
+    "static/media/sp-img-4.png": "/static/media/sp-img-4.f19a0d95fd90ef5b455d.png",
+    "static/media/sp-img-3.png": "/static/media/sp-img-3.07e2cc8b906e6fb0291c.png",
+    "static/media/black_9.png": "/static/media/black_9.14e78b0e1034d316d89d.png",
+    "static/media/sp-img-2.png": "/static/media/sp-img-2.1394e1406bc4718ac8c4.png",
+    "static/media/intro_photo.png": "/static/media/intro_photo.903756e518b44e20d0ed.png",
+    "static/media/brand_img_2.png": "/static/media/brand_img_2.2ce5ae951b0d74541e96.png",
+    "static/media/brand_experience_bg.png": "/static/media/brand_experience_bg.372f960c4f72159378e8.png",
+    "static/media/brand_img_3.png": "/static/media/brand_img_3.c4a0d2ec1d574e4ec475.png",
+    "static/media/stats_bg.png": "/static/media/stats_bg.84a98eff77b07f0ad560.png",
+    "static/media/footer_bg.png": "/static/media/footer_bg.a2b04fdc8408da103a91.png",
+    "static/media/brand_img_1.png": "/static/media/brand_img_1.b2f2f6ac28d793002100.png",
+    "static/media/Faro-SemiBoldLucky.woff": "/static/media/Faro-SemiBoldLucky.dead458c49efd953e342.woff",
+    "static/media/Faro-BoldLucky.woff": "/static/media/Faro-BoldLucky.87a067d46acf7a148fce.woff",
+    "static/media/project_award_1.png": "/static/media/project_award_1.0a4254ce0bab81aa117f.png",
+    "static/media/Faro-SemiBoldLucky.woff2": "/static/media/Faro-SemiBoldLucky.e020cfcb371397ab1ae9.woff2",
+    "static/media/Faro-BoldLucky.woff2": "/static/media/Faro-BoldLucky.a52a663dedcffc22df99.woff2",
+    "static/media/HelveticaNeueCyr-Light.woff": "/static/media/HelveticaNeueCyr-Light.c1b4dce50601b85b61e7.woff",
+    "static/media/HelveticaNeueCyr-Medium.woff": "/static/media/HelveticaNeueCyr-Medium.1c5a4d413294b14b36e0.woff",
+    "static/media/HelveticaNeueCyr-Bold.woff": "/static/media/HelveticaNeueCyr-Bold.e8ac3e02953308d54ad6.woff",
+    "static/media/project_award_2.png": "/static/media/project_award_2.6e8bb6b0487af1586f57.png",
+    "static/media/HelveticaNeueCyr-Light.woff2": "/static/media/HelveticaNeueCyr-Light.ca1c9d28a98e39bc4088.woff2",
+    "static/media/HelveticaNeueCyr-Medium.woff2": "/static/media/HelveticaNeueCyr-Medium.751c19bd96c1fdbe6c88.woff2",
+    "static/media/HelveticaNeueCyr-Bold.woff2": "/static/media/HelveticaNeueCyr-Bold.a737902275e936eaf242.woff2",
+    "index.html": "/index.html",
+    "main.04481ce4.css.map": "/static/css/main.04481ce4.css.map",
+    "main.a9460699.js.map": "/static/js/main.a9460699.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.04481ce4.css",
+    "static/js/main.a9460699.js"
+  ]
+}
