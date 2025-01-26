@@ -34,7 +34,7 @@ const BrandExperience = () => {
                 src={star_img} 
                 alt="Decorative star" 
                 className="card-image" 
-                style={{ transform: `rotate(${rotation}deg)` }}
+                style={{ transform: `rotate3d(1,3,20,${rotation}deg)` }}
             />
         </div>
       <div className="brand-header">
