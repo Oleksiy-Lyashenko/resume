@@ -12,7 +12,7 @@ function App() {
   const [error, setError] = useState('');
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
-  const correctPassword = import.meta.env.APP_PASSWORD // Replace with your desired password
+  const correctPassword = "W2xr79.&@36Gy@6" // Replace with your desired password
 
   const handleSubmit = (e) => {
     e.preventDefault();
