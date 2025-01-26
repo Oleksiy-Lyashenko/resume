@@ -7,7 +7,7 @@ import SelectedProjects from './components/SelectedProject';
 import BrandExperience from './components/BrandExperience';
 import Footer from './components/Footer';
 
-function App() {
+export const App = () =>  {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [isAuthenticated, setIsAuthenticated] = useState(false);
